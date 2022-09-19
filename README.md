@@ -25,7 +25,9 @@ note the following for the config.js:<br>
 Application ID / Client ID<br>
 Client Secret<br><br>
 now you open the ./config/config.js in an editor and fill out ALL fields<br>
-save and close, copy the whole folder in your resource and if you did everything right, the bot will appear in your discord when you start the resource and your console should list who is whitelisted, admin, mod, supporter
+save and close, copy the whole folder in your resource.
+now add "bao-discord" to your server.cfg
+and if you did everything right, the bot will appear in your discord when you start the resource and your console should list who is whitelisted, admin, mod, supporter
 
 
 you can use the rights management in your scripts:
