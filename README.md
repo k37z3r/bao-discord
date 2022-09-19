@@ -28,3 +28,10 @@ now you open the ./config/config.js in an editor and fill out ALL fields<br>
 save and close, copy the whole folder in your resource and if you did everything right, the bot will appear in your discord when you start the resource and your console should list who is whitelisted, admin, mod, supporter
 
 
+you can use the rights management in your scripts:
+import { refreshWhitelist, isAdmin, isMod, isSupporter } from 'bao-discord'.
+
+refreshWhitelist() --> reload your whitelist
+isAdmin(player) --> return true or false
+isMod(player) --> return true or false
+isSupporter(player) --> return true or false
