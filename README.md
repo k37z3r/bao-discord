@@ -1,2 +1,27 @@
 # bao-discord
 Discord Whitelist- and Permission-System for alt:V
+
+
+install the following modules for NodeJS:
+axios
+fs
+useful
+discord.js
+
+You need to create a bot in your Discord: https://discord.com/developers
+
+when creating the bot under "OAuth2 --> Redirects --> General" enter the following:<br>
+http://127.0.0.1<br><br>
+Activate the following when creating the bot under "Bot":<br>
+PRESENCE INTENT<br>
+SERVER MEMBERS INTENT<br>
+MESSAGE CONTENT INTENT<br><br>
+To invite your bot to your server, go to: "OAuth2 --> URL Generator"<br>
+here you activate under SCOPES: bot<br>
+and under BOT PERMISSIONS: Administrator<br><br>
+Now you can open the url generated at the bottom in a TAB or window<br><br>
+note the following for the config.js:<br>
+Application ID / Client ID<br>
+Client Secret<br><br>
+now you open the ./config/config.js in an editor and fill out ALL fields<br>
+save and close, copy the whole folder in your resource and if you did everything right, the bot will appear in your discord when you start the resource and your console should list who is whitelisted, admin, mod, supporter
