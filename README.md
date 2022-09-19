@@ -1,6 +1,7 @@
 # bao-discord
 Discord Whitelist- and Permission-System for alt:V
-
+<br><br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 install the following modules for NodeJS:
 axios
@@ -26,4 +27,4 @@ Client Secret<br><br>
 now you open the ./config/config.js in an editor and fill out ALL fields<br>
 save and close, copy the whole folder in your resource and if you did everything right, the bot will appear in your discord when you start the resource and your console should list who is whitelisted, admin, mod, supporter
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
