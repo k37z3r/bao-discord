@@ -10,9 +10,3 @@ async function getOAuthToken(DISCORD_APP_ID) {
 alt.onServer('bao:discord:set_discord_app_id', (APP_ID) => {
 	getOAuthToken(APP_ID);
 });
-
-/*
-alt.onServer("discordbotbyluz:debuginfos", (infos) => {
-	console.log(infos);
-});
-*/
