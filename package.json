@@ -1,0 +1,20 @@
+{
+	"name": "bao-discord",
+	"version": "1.0.0",
+	"description": "Discord Whitelist- and Permission-System",
+	"main": "",
+	"scripts": {
+		"test": "tsc",
+		"preversion": "yarn run test",
+		"release": "yarn version --no-git-tag-version"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/k37z3r/bao-discord"
+	},
+	"author": "Luz Iferato",
+	"license": "CC-BY-NC-SA/4.0",
+	"bugs": "https://github.com/k37z3r/bao-discord/issues",
+	"homepage": "https://github.com/k37z3r",
+	"type": "module"
+}
