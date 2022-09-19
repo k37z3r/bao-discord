@@ -1,2 +1,2 @@
 # bao-discord
-Discord Whitelist- and Permission-System
+Discord Whitelist- and Permission-System for alt:V
