@@ -8,7 +8,11 @@ const discordClient = new Client({ intents: [ GatewayIntentBits.Guilds, GatewayI
 import { _CONFIG } from '../config/config.js';
 import { _L } from '../language/language.js'
 let WhitelistUpdate;
-var onlineusers = [], WhiteList = [], AdminList = [], ModList = [], SupporterList = [];
+var onlineusers = [];
+var WhiteList = [];
+var AdminList = [];
+var ModList = [];
+var SupporterList = [];
 
 discordClient.on('guildMemberUpdate', (oldMember, newMember) => {
 	refreshWhitelist();
@@ -63,7 +67,7 @@ alt.onClient('bao:discord:token', async (player, token) => {
 	server.channels.cache.get(_CONFIG.DISCORD_STAUS_CHANNEL).send(_L("joined", [getDiscordNameById(player)]));
 });
 
-export function refreshWhitelist(){
+export refreshWhitelist = function(){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
@@ -146,7 +150,7 @@ export function refreshWhitelist(){
 		});
 	});
 }
-function getIdByDiscord(dsid){
+export getIdByDiscord = function(dsid){
   for (let i=0; i< onlineusers.length; i++){
     if (dsid == onlineusers[i]["dsid"])
       return onlineusers[i]["id"];
@@ -181,7 +185,7 @@ function getOnlineUsersById(id){
   }
   return -1;
 }
-export function isAdmin(id){
+export isAdmin = function(id){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
@@ -195,7 +199,7 @@ export function isAdmin(id){
 		});
 	});
 }
-export function isMod(id){
+export isMod = function(id){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
@@ -209,7 +213,7 @@ export function isMod(id){
 		});
 	});
 }
-export function isSupporter(id){
+export isSupporter = function(id){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
