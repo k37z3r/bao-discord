@@ -67,7 +67,7 @@ alt.onClient('bao:discord:token', async (player, token) => {
 	server.channels.cache.get(_CONFIG.DISCORD_STAUS_CHANNEL).send(_L("joined", [getDiscordNameById(player)]));
 });
 
-export refreshWhitelist = function(){
+export function refreshWhitelist(){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
@@ -150,7 +150,7 @@ export refreshWhitelist = function(){
 		});
 	});
 }
-export getIdByDiscord = function(dsid){
+export function getIdByDiscord(dsid){
   for (let i=0; i< onlineusers.length; i++){
     if (dsid == onlineusers[i]["dsid"])
       return onlineusers[i]["id"];
@@ -185,7 +185,7 @@ function getOnlineUsersById(id){
   }
   return -1;
 }
-export isAdmin = function(id){
+export function isAdmin(id){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
@@ -199,7 +199,7 @@ export isAdmin = function(id){
 		});
 	});
 }
-export isMod = function(id){
+export function isMod(id){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
@@ -213,7 +213,7 @@ export isMod = function(id){
 		});
 	});
 }
-export isSupporter = function(id){
+export function isSupporter(id){
 	let server = discordClient.guilds.cache.get(_CONFIG.DISCORD_SERVER_ID);
 	server.members.fetch().then(members => {
 		members.forEach(member =>{
